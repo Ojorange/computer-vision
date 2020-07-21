@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>401</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_Camera"/>
+    <addaction name="actionImport_List"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuMultiple_Cam">
+     <property name="title">
+      <string>Multiple Cam</string>
+     </property>
+     <addaction name="action2_by_2"/>
+     <addaction name="action3_by_3"/>
+     <addaction name="action4_by_4"/>
+    </widget>
+    <addaction name="actionSingle_Cam"/>
+    <addaction name="actionAuto_Switch"/>
+    <addaction name="menuMultiple_Cam"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_Camera">
+   <property name="text">
+    <string>New Camera</string>
+   </property>
+  </action>
+  <action name="actionImport_List">
+   <property name="text">
+    <string>Import List</string>
+   </property>
+  </action>
+  <action name="actionSingle_Cam">
+   <property name="text">
+    <string>Single Cam</string>
+   </property>
+  </action>
+  <action name="actionAuto_Switch">
+   <property name="text">
+    <string>Auto Switch</string>
+   </property>
+  </action>
+  <action name="action2_by_2">
+   <property name="text">
+    <string>2 by 2</string>
+   </property>
+  </action>
+  <action name="action3_by_3">
+   <property name="text">
+    <string>3 by 3</string>
+   </property>
+  </action>
+  <action name="action4_by_4">
+   <property name="text">
+    <string>4 by 4</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

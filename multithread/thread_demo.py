@@ -4,7 +4,7 @@ import cv2
 from CountsPerSec import CountsPerSec
 from VideoGet import VideoGet
 from VideoShow import VideoShow
-
+# rtsp://admin:Allindia1!@10.0.0.54:10554/Streaming/channels/401/
 def putIterationsPerSec(frame, iterations_per_sec):
     """
     Add iterations per second text to lower-left corner of a frame.
